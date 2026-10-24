@@ -1,0 +1,39 @@
+name: Auto Sync NLB DLB Results
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '15 16 * * *'
+    - cron: '45 16 * * *'
+    - cron: '30 17 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Real Headless Chrome (Playwright) to Bypass Cloudflare
+        run: npm install playwright && npx playwright install --with-deps chromium
+
+      - name: Run Full NLB & DLB History + Daily Scraper
+        run: node scraper.js
+
+      - name: Commit and Push results.json
+        run: |
+          git config user.name "LakSweep Auto Bot"
+          git config user.email "bot@laksweep.app"
+          git add results.json
+          git diff --staged --quiet || git commit -m "Auto-sync official NLB & DLB results"
+          git push
