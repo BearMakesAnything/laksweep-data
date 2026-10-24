@@ -1,0 +1,27 @@
+name: Auto Sync NLB DLB Results
+on:
+  schedule:
+    - cron: '15 16 * * *' # සෑම දිනකම රාත්‍රී 9:45 SLST
+    - cron: '45 16 * * *' # සෑම දිනකම රාත්‍රී 10:15 SLST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scraper.js
+      - name: Commit updated results.json
+        run: |
+          git config user.name "LakSweep Auto Bot"
+          git config user.email "bot@laksweep.app"
+          git add results.json
+          git diff --staged --quiet || git commit -m "Auto-update official lottery results"
+          git push
+          
