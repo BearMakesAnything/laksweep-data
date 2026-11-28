@@ -1,7 +1,142 @@
 {
-  "updated_at": "2026-11-27T01:08:18.550Z",
-  "count": 1687,
+  "updated_at": "2026-11-28T00:03:17.489Z",
+  "count": 1694,
   "results": [
+    {
+      "id": "mahajana-sampatha_6384",
+      "agency": "NLB",
+      "slug": "mahajana-sampatha",
+      "name_si": "මහජන සම්පත",
+      "name_en": "Mahajana Sampatha",
+      "draw_no": "6384",
+      "draw_date": "2026-11-27",
+      "letter": "G",
+      "numbers": [
+        "5",
+        "9",
+        "5",
+        "5",
+        "5",
+        "3"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 25,000,000"
+    },
+    {
+      "id": "govisetha_4626",
+      "agency": "NLB",
+      "slug": "govisetha",
+      "name_si": "ගොවිසෙත",
+      "name_en": "Govisetha",
+      "draw_no": "4626",
+      "draw_date": "2026-11-27",
+      "letter": "E",
+      "numbers": [
+        "3",
+        "5",
+        "7",
+        "37"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 60,000,000"
+    },
+    {
+      "id": "mega-power_2732",
+      "agency": "NLB",
+      "slug": "mega-power",
+      "name_si": "මෙගා පවර්",
+      "name_en": "Mega Power",
+      "draw_no": "2732",
+      "draw_date": "2026-11-27",
+      "letter": "X",
+      "numbers": [
+        "23",
+        "5",
+        "21",
+        "28",
+        "54"
+      ],
+      "super_ball": "23",
+      "jackpot": "රු. 234,500,000"
+    },
+    {
+      "id": "dhana-nidhanaya_2414",
+      "agency": "NLB",
+      "slug": "dhana-nidhanaya",
+      "name_si": "ධන නිධානය",
+      "name_en": "Dhana Nidhanaya",
+      "draw_no": "2414",
+      "draw_date": "2026-11-27",
+      "letter": "N",
+      "numbers": [
+        "37",
+        "43",
+        "53",
+        "68"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 80,000,000"
+    },
+    {
+      "id": "handahana_1693",
+      "agency": "NLB",
+      "slug": "handahana",
+      "name_si": "හඳහන",
+      "name_en": "Handahana",
+      "draw_no": "1693",
+      "draw_date": "2026-11-27",
+      "letter": "LIBRA",
+      "numbers": [
+        "26",
+        "43",
+        "44",
+        "61"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 10,000,000"
+    },
+    {
+      "id": "ada-sampatha_0959",
+      "agency": "NLB",
+      "slug": "ada-sampatha",
+      "name_si": "අද සම්පත",
+      "name_en": "Ada Sampatha",
+      "draw_no": "0959",
+      "draw_date": "2026-11-27",
+      "letter": "",
+      "numbers": [
+        "5",
+        "3",
+        "5",
+        "5",
+        "3",
+        "5",
+        "5",
+        "5",
+        "3",
+        "G"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 15,000,000"
+    },
+    {
+      "id": "nlb-jaya_0652",
+      "agency": "NLB",
+      "slug": "nlb-jaya",
+      "name_si": "NLB ජය",
+      "name_en": "NLB Jaya",
+      "draw_no": "0652",
+      "draw_date": "2026-11-27",
+      "letter": "D",
+      "numbers": [
+        "6",
+        "6",
+        "3",
+        "3"
+      ],
+      "super_ball": "",
+      "jackpot": "රු. 10,000,000"
+    },
     {
       "id": "mahajana-sampatha_6383",
       "agency": "NLB",
